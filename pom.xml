@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>deploy-poc</artifactId>
+	<artifactId>deploy-poc-self-17-10-22</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>deploy-poc</name>
+	<name>deploy-poc-self-17-10-22</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,22 +29,6 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<configuration>
-    <cloudHubDeployment>
-      <uri>https://anypoint.mulesoft.com</uri>
-      <muleVersion>4.4.0</muleVersion>
-      <username>nawazShaif</username>
-      <password>Nawaz@123</password>
-      <applicationName>dwpoc11</applicationName>
-      <environment>Sandbox</environment>
-      <workers>1</workers>
-      <workerType>MICRO</workerType>
-      <objectStoreV2>true</objectStoreV2>
-      <properties>
-        <key>value</key>
-      </properties>
-    </cloudHubDeployment>
-  </configuration>
 			</plugin>
 		</plugins>
 	</build>
